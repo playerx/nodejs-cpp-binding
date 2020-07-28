@@ -34,3 +34,7 @@ MacBook Pro (Retina, 15-inch, Mid 2014)
 | Avg   | Fastest |
 | ----- | ------- |
 | 246ns | 341ns   |
+
+## Related
+
+[deno-rust-plugin](https://github.com/playerx/deno-rust-plugin)
