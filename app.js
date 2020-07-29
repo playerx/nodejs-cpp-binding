@@ -17,15 +17,15 @@ var addon = require("bindings")("hello");
 function banchSyncOp(addon, sampleSize) {
   const startedAt = performance.now();
 
-  const results = new Array(sampleSize).fill(0).map(() => {
+  for (let i = 0; i < sampleSize; i++) {
     let response = addon.hello([1, 2, 3, 4]);
-  });
+  }
 
   const duration = performance.now() - startedAt;
 
   return {
     min: NaN,
-    avg: duration / results.length,
+    avg: duration / sampleSize,
     max: NaN,
   };
 }
